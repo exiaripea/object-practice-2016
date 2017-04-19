@@ -69,7 +69,10 @@ namespace object_practice_2016
 
         private void buttonNumber_Click(object sender, EventArgs e)
         {
-            textBox1.AppendText("人は"+CHito.getCount() + "人\r\n");
+            textBox1.AppendText("人は" + CHito.getCount() + "人\r\n");
+            textBox1.AppendText("鳥は" + CTori.getCount() + "羽\r\n");
+            textBox1.AppendText("魚は" + CSakana.getCount() + "匹\r\n");
+            textBox1.AppendText("生き物は" + CIkimono.getIkimonoCount() + "体\r\n");
         }
     }
 }
