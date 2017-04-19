@@ -6,23 +6,27 @@ using System.Threading.Tasks;
 
 namespace object_practice_2016
 {
-    class CHito : CIkimono
+    class CSakana : CIkimono
     {
+        //魚の数
         private static int count = 0;
 
-        public CHito(string nm) : base(nm)
+        //コンストラクター
+        public CSakana(string nm) : base(nm)
         {
             count++;
         }
 
+        //魚の数を返す
         public static int getCount()
         {
             return count;
         }
 
+        //行動
         public string action()
         {
-            return "テクテク";
+            return "スイスイ";
         }
     }
 }

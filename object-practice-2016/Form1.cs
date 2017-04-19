@@ -20,6 +20,8 @@ namespace object_practice_2016
         private string[] SAKANA_NAMES = { "グッピー", "メダカ"};
 
         private CHito[] hitoObjects;
+        private CTori[] toriObjects;
+        private CSakana[] sakanaObjects;
 
         public Form1()
         {
@@ -33,6 +35,20 @@ namespace object_practice_2016
             {
                 hitoObjects[i] = new CHito(HITO_NAMES[i]);
                 textBox1.AppendText("" + i + ":" + HITO_NAMES[i]+"\r\n");
+            }
+
+            toriObjects = new CTori[TORI_NAMES.Length];
+            for (int i=0; i<TORI_NAMES.Length; i++)
+            {
+                toriObjects[i] = new CTori(TORI_NAMES[i]);
+                textBox1.AppendText("" + i + ":" + TORI_NAMES[i]+"\r\n");
+            }
+
+            sakanaObjects = new CSakana[SAKANA_NAMES.Length];
+            for (int i = 0; i < SAKANA_NAMES.Length; i++)
+            {
+                sakanaObjects[i] = new CSakana(SAKANA_NAMES[i]);
+                textBox1.AppendText("" + i + ":" + SAKANA_NAMES[i] + "\r\n");
             }
 
         }
